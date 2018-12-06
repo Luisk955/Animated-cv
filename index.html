@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/gsap/TweenMax.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-black open-sans">
+            <a class="navbar-brand color-white" href="" id="home">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link color-white" href="#" id="aboutMe">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-white" href="#">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-white" href="#">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-white" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-white" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="startSection" class="start-container">
+            <div class="container-fluid">
+                <div class="header-image-container">
+                    <div class="letters-box" id="headerRect">
+                        <h2 id="name" class="text-center color-white name">Luis Carlos Del Valle Ureña</h2>
+                        <h3 id="prof" class="text-center color-white prof">Web Developer</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="aboutMeSection">
+            <div class="container-fluid">
+                <h2 class="text-center open-sans mt-3 mauto" id="aboutMeTitle">About me</h2>
+                <div class="row about-me-row">
+                    <div class="col-md-6 col-image-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="295px"
+                            height="303px" id="svgCircle">
+                            <path fill-rule="evenodd" fill="rgb(37, 37, 37)" d="M147.500,-0.000 C228.962,-0.000 295.000,67.829 295.000,151.500 C295.000,235.171 228.962,303.000 147.500,303.000 C66.038,303.000 -0.000,235.171 -0.000,151.500 C-0.000,67.829 66.038,-0.000 147.500,-0.000 Z" />
+                        </svg>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <p id="aboutMeText1">I’m a web developer and a software engineering student. I really like
+                                coding and giving solutions to everyday problems. I’m a videogame passionate and I
+                                aspire
+                                to become a game developer someday.</p>
+                        </div>
+
+                        <div class="row row-text-2">
+                            <p id="aboutMeText2">I like to keep my code clean and legible so I try to maintain good
+                                practices and programming standards. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
