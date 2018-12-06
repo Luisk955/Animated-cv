@@ -46,6 +46,10 @@ main {
     color: white !important;
 }
 
+.color-black {
+    color: black !important;
+}
+
 .name,
 .prof {
     width: 100%;
@@ -81,16 +85,13 @@ main {
     justify-content: center;
 }
 
-.education-box1, .education-box2 {
+.education-box1,
+.education-box2 {
     margin: 0 auto;
     width: 30%;
     height: 40%;
     background: rgba(54, 54, 54, 0.932);
     opacity: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -98,10 +99,10 @@ main {
 }
 
 .education-section {
-    height: 90vh !important;
+    height: 94.2vh !important;
 }
 
-.education-row{
+.education-row {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -109,4 +110,32 @@ main {
     align-items: center;
     height: 50%;
     justify-content: center;
+    margin: 0 auto;
+}
+
+.cf-education {
+    height: 100%;
+}
+
+.education-row-in-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.education-row-in-down {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 50%;
+}
+
+
+.ed-title-row {
+    justify-content: center;
+}
+
+.education-title {
+    margin-top: 1%;
 }
