@@ -80,3 +80,33 @@ main {
     align-items: center;
     justify-content: center;
 }
+
+.education-box1, .education-box2 {
+    margin: 0 auto;
+    width: 30%;
+    height: 40%;
+    background: rgba(54, 54, 54, 0.932);
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.education-section {
+    height: 90vh !important;
+}
+
+.education-row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    justify-content: center;
+}

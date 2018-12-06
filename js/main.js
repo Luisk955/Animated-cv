@@ -13,23 +13,32 @@ function init() {
 
 
 
-    //Containers
-    var startSection = document.getElementById(`startSection`);
-    var aboutMeSection = document.getElementById(`aboutMeSection`);
-
-
+    //Containers 
+    let startSection = document.getElementById(`startSection`),
+        aboutMeSection = document.getElementById(`aboutMeSection`),
+        educationSection = document.getElementById(`educationSection`),
+        skillsSection = document.getElementById(`skillsSection`),
+        projectsSection = document.getElementById(`projectsSection`),
+        contactSection = document.getElementById(`contactSection`);
 
     headerStart(startSection);
 
-
     //Navbar events
-    let home = document.getElementById(`home`);
-    let aboutMe = document.getElementById(`aboutMe`);
+    let home = document.getElementById(`home`),
+        aboutMe = document.getElementById(`aboutMe`),
+        education = document.getElementById(`education`),
+        skills = document.getElementById(`skills`),
+        projects = document.getElementById(`projects`),
+        contact = document.getElementById(`contact`);
+
+
     home.addEventListener(`click`, headerStart);
     aboutMe.addEventListener(`click`, aboutMeStart);
+    education.addEventListener(`click`, educationStart);
 
-    function headerStart(startSection) {
+    function headerStart() {
         hideContainer(aboutMeSection);
+        hideContainer(educationSection);
         showContainer(startSection, `flex`);
         let headerRect = document.getElementById(`headerRect`),
             name = document.getElementById(`name`),
@@ -67,6 +76,7 @@ function init() {
 
     function aboutMeStart() {
         hideContainer(startSection);
+        hideContainer(educationSection);
         showContainer(aboutMeSection, `flex`);
 
 
@@ -103,10 +113,28 @@ function init() {
         //svgCircle
         let svgCircleOptions = {
             x: -800,
-            delay: 2,
+            delay: 1.5,
             ease: Elastic.easeInOut
         };
         TweenMax.from(svgCircle, 2, svgCircleOptions);
+    }
+
+    function educationStart() {
+        hideContainer(startSection);
+        hideContainer(aboutMeSection);
+        showContainer(educationSection, `block`);
+        let aboutMeText1 = document.getElementById(`aboutMeText1`);
+
+        //aboutMeTitle
+        let aboutMeTitleOptions = {
+            scale: 0,
+            transformOrigin: `center`,
+            delay: 0.5,
+            ease: Elastic.easeOut
+        };
+        TweenMax.from(aboutMeTitle, 4, aboutMeTitleOptions);
+
+
     }
 
 
